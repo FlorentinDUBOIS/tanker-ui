@@ -6,13 +6,19 @@
   "scripts": {
     "compile": "webpack",
     "compile:w": "webpack -w",
-    "compile:p": "webpack -p"
+    "compile:p": "webpack -p",
+    "serve": "http-server -p 3000 .",
+    "format": "prettier -l --write src/**/*.js webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FlorentinDUBOIS/tanker-ui.git"
   },
-  "keywords": ["tanker", "warp10", "sensision"],
+  "keywords": [
+    "tanker",
+    "warp10",
+    "sensision"
+  ],
   "author": "Florentin Dubois <contact@florentin-dubois.fr>",
   "license": "MIT",
   "bugs": {
@@ -24,12 +30,21 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "material-ui": "^1.0.0-beta.17",
+    "history": "^4.7.2",
+    "http-server": "^0.10.0",
+    "material-ui": "^1.0.0-beta.18",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "prettier": "^1.7.4",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-leaflet": "^1.7.1",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.8",
     "redux": "^3.7.2",
+    "rxjs": "^5.5.2",
     "webpack": "^3.8.1"
   }
 }
