@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
     <style>
-      html, body, #root {
+      html, body, #root, #root > div, #root > div > div {
         width: 100vw;
         height: 100vh;
 
@@ -21,6 +21,11 @@
         margin: 0;
 
         overflow: auto;
+      }
+
+      #root > div > div {
+        display: flex;
+        flex-direction: column;
       }
     </style>
   </head>
